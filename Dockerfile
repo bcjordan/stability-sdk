@@ -16,4 +16,4 @@ COPY . .
 
 EXPOSE 80
 
-CMD gunicorn app:app
+CMD gunicorn app:app --log-file=-
