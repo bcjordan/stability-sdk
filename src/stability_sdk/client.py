@@ -95,7 +95,7 @@ def process_artifacts_from_answers(
                     f.write(bytes(contents))
                     if verbose:
                         artifact_t = generation.ArtifactType.Name(artifact.type)
-                        logger.info(f"wrote {artifact_t} to {out_p}")
+                        print(f"wrote {artifact_t} to {out_p}")
 
             yield [out_p, artifact]
             idx += 1

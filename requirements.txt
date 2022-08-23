@@ -3,3 +3,4 @@ grpcio
 grpcio-tools
 python-dotenv
 python-magic
+Flask==2.2.2
