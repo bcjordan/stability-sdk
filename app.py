@@ -10,7 +10,7 @@ from subprocess import PIPE, Popen
 
 @app.route('/')
 def hello_world():
-    command = 'python3 src/stability_sdk/client.py -W 512 -H 512 "A stunning house."'
+    command = 'python3 src/stability_sdk/client.py -W 512 -H 512 "An adorable happy puppy dog."'
     with Popen(command, stdout=PIPE, stderr=None, shell=True) as process:
         output = process.communicate()[0].decode("utf-8")
         # return output
